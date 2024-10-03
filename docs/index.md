@@ -56,7 +56,7 @@ Disponibilidade: Garantir 99,9% de disponibilidade.
 
 # Diagrama de Casos de Uso
 
-[Diagrama de Casos de uso.pdf](https://github.com/user-attachments/files/17248395/Diagrama.de.Casos.de.uso.pdf)
+
 
 # Descrição dos Casos de Uso
 
