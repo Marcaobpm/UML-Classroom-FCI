@@ -56,11 +56,13 @@ Disponibilidade: Garantir 99,9% de disponibilidade.
 
 # Diagrama de Casos de Uso
 
+![Diagrama de Casos de uso-1](https://github.com/user-attachments/assets/e95dbdfd-a677-427b-bc78-a75247e006b3)
 
 
 # Descrição dos Casos de Uso
 
-*&lt;Descrição do comportamento entre os atores/resquisitos&gt;*
+[Documento 11.docx](https://github.com/user-attachments/files/17248498/Documento.11.docx)
+
 
 
 
