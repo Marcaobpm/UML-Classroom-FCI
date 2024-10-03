@@ -68,4 +68,27 @@ Disponibilidade: Garantir 99,9% de disponibilidade.
 
 # Referências
 
-*&lt;Lista de referências&gt;*
+      Pressman, R. S., & Maxim, B. R. (2021). Engenharia de software (9th ed.). 
+
+      Link da URL:  https://app.minhabiblioteca.com.br/books/9786558040118
+
+          Filho, W.D.P. P. (2019). Engenharia de Software – Produtos – Vol.1 (4th ed.).
+
+            Link da URL:  https://app.minhabiblioteca.com.br/books/9788521636724
+
+                Pressman, R. S., & Maxim, B. R. (2021). Engenharia de software (9th ed.). 
+
+                Link da URL:  https://app.minhabiblioteca.com.br/books/9786558040118
+
+              Pressman, R. S., & Maxim, B. R. (2021). Engenharia de software (9th ed.). 
+
+                Link da URL:  https://app.minhabiblioteca.com.br/books/9786558040118
+
+      Pressman, R. S., & Maxim, B. R. (2021). Engenharia de software (9th ed.). 
+
+                Link da URL: https://app.minhabiblioteca.com.br/books/9786558040118
+
+                Filho, W.D.P. P. (2019). Engenharia de Software – Produtos – Vol.1 (4th ed.).
+
+            Link da URL:  https://app.minhabiblioteca.com.br/books/9788521636724
+
