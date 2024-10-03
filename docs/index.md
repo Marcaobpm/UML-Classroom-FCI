@@ -61,7 +61,399 @@ Disponibilidade: Garantir 99,9% de disponibilidade.
 
 # Descrição dos Casos de Uso
 
-[Documento 11.docx](https://github.com/user-attachments/files/17248498/Documento.11.docx)
+Caso 1  
+
+Fazer Pedido 
+
+ Ator Principal - Cliente  
+
+  
+
+Objetivo - Permitir que o cliente faça um pedido de pizza  
+
+  
+
+Pré-condições - O cliente deve ter acesso ao aplicativo ou site  
+
+  
+
+Fluxo Principal -  
+
+ O cliente acessa o aplicativo/site.  
+
+ O cliente seleciona a opção de fazer um pedido.  
+
+ O sistema localiza a loja mais próxima.  
+
+ O cliente escolhe itens do menu.  
+
+ O cliente confirma o pedido.  
+
+ 
+
+Fluxos Alternativos - Se a loja não estiver disponível, o sistema sugere outra loja 
+
+ 
+
+Caso 2  
+
+ Localizar Loja  
+
+ Ator Principal - Sistema  
+
+  
+
+Objetivo - Identificar a loja mais próxima do cliente  
+
+  
+
+Pré-condições - O cliente deve permitir acesso à localização  
+
+  
+
+Fluxo Principal  
+
+ O sistema solicita a localização do cliente.  
+
+ O sistema identifica a loja mais próxima com base na localização.  
+
+  
+
+ Fluxos Alternativos - Se a localização não puder ser determinada, o sistema pede que o cliente insira o endereço manualmente 
+
+Caso 3  
+
+ Exibir Menu  
+
+  
+
+Ator Principal - Sistema  
+
+  
+
+Objetivo - Mostrar o menu da loja selecionada  
+
+  
+
+Pré-condições - A loja mais próxima deve ter sido identificada  
+
+  
+
+Fluxo Principal  
+
+ O sistema exibe o menu da loja mais próxima  
+
+  
+
+Fluxos Alternativos - Se a loja não tiver itens disponíveis, o sistema notifica o cliente 
+
+ 
+
+ 
+
+Confirmar Pedido  
+
+  
+
+ Ator Principal - Cliente  
+
+  
+
+Objetivo - Confirmar os itens selecionados e finalizar o pedido  
+
+  
+
+Pré-condições - O cliente deve ter selecionado itens do menu  
+
+  
+
+Fluxo Principal  
+
+ O cliente revisa o pedido.  
+
+ O cliente confirma o pedido.  
+
+ O sistema processa o pedido.  
+
+  
+
+Fluxos Alternativos - O cliente pode cancelar o pedido antes de confirmar 
+
+Calcular tempo de espera  
+
+  
+
+ Ator Principal - Sistema  
+
+  
+
+Objetivo - Informar o cliente sobre o tempo estimado de entrega  
+
+  
+
+Pré-condições - O pedido deve estar confirmado.  
+
+  
+
+Fluxo Principal - 
+
+ O sistema calcula o tempo estimado de entrega.  
+
+ O sistema informa o cliente sobre o tempo estimado.  
+
+  
+
+Fluxos Alternativos - Se houver atrasos, o sistema notifica o cliente  
+
+ 
+
+ 
+
+ 
+
+Caso 6  
+
+ Gerenciar Pedidos  
+
+  
+
+ Ator Principal - Funcionário da loja  
+
+  
+
+Objetivo - Gerenciar os pedidos recebidos na loja  
+
+  
+
+Pré-condições - O pedido deve estar registrado no sistema  
+
+  
+
+Fluxo Principal - 
+
+ O funcionário acessa a lista de pedidos.  
+
+ O funcionário visualiza os detalhes do pedido.  
+
+ O funcionário atualiza o status do pedido.  
+
+  
+
+Fluxos Alternativos - Se o pedido não puder ser processado, o funcionário notifica o cliente 
+
+ 
+
+ 
+
+Caso 7  
+
+Verificar estoque  
+
+  
+
+ Ator Principal - Sistema  
+
+  
+
+Objetivo - Garantir que os itens do pedido estão disponíveis  
+
+  
+
+Pré-condições - Um pedido deve estar em processo  
+
+  
+
+Fluxo Principal  
+
+ O sistema verifica a disponibilidade dos itens.  
+
+ O sistema atualiza o status do estoque  
+
+  
+
+Fluxos Alternativos - Se um item não estiver disponível, o sistema notifica o funcionário 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso 8  
+
+ Preparar Pedido  
+
+  
+
+ Ator Principal - Funcionário da Loja  
+
+  
+
+Objetivo - Preparar o pedido conforme solicitado pelo cliente.  
+
+  
+
+Pré-condições - O pedido deve ter sido confirmado  
+
+  
+
+Fluxo Principal  
+
+ O funcionário inicia a preparação do pedido.  
+
+ O funcionário registra o tempo de preparo.  
+
+ O funcionário finaliza o pedido.  
+
+  
+
+Fluxos Alternativos - Se houver problemas na preparação, o funcionário notifica o cliente 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso 9  
+
+ Notificar Cliente  
+
+  
+
+Ator Principal - Sistema  
+
+  
+
+Objetivo - Informar o cliente sobre o status do pedido  
+
+  
+
+Pré-condições - Um pedido deve estar em processamento  
+
+  
+
+Fluxo Principal  
+
+ O sistema envia notificações ao cliente sobre atualizações do pedido  
+
+  
+
+Fluxos Alternativos - Se a entrega for atrasada, o sistema notifica o cliente imediatamente 
+
+ 
+
+Caso 10  
+
+Rastrear Pedido  
+
+  
+
+Ator Principal - Cliente  
+
+  
+
+Objetivo - Permitir que o cliente acompanhe seu pedido em tempo real  
+
+  
+
+Pré-condições - O pedido deve estar em processo de entrega  
+
+  
+
+Fluxo Principal  
+
+O cliente acessa a função de rastreamento.  
+
+O sistema exibe a localização do entregador e o status do pedido.  
+
+  
+
+Fluxos Alternativos - Se o sistema não puder acessar a localização, informa que está indisponível 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso 11  
+
+Realizar Entrega  
+
+  
+
+Ator Principal - Sistema de Entrega  
+
+  
+
+Objetivo - Garantir que o pedido seja entregue ao cliente  
+
+  
+
+Pré-condições - O pedido deve estar pronto para entrega  
+
+  
+
+Fluxo Principal  
+
+ O sistema de entrega coleta o pedido na loja.  
+
+ O entregador leva o pedido até o cliente.  
+
+  
+
+Fluxos Alternativos - Se houver problemas de entrega, o sistema notifica o cliente e a loja  
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+Caso 12  
+
+Gerenciar as Configurações do sistema  
+
+  
+
+Ator Principal - Administrador  
+
+  
+
+Objetivo - Permitir que o administrador gerencie o sistema  
+
+  
+
+Pré-condições - O administrador deve estar autenticado  
+
+  
+
+Fluxo Principal  
+
+O administrador acessa o painel de controle.  
+
+O administrador modifica as configurações do sistema.  
+
+O administrador salva as alterações.  
+
+  
+
+Fluxos Alternativos - Se as alterações não puderem ser salvas, o sistema exibe um erro
 
 
 
