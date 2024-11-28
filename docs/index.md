@@ -458,6 +458,182 @@ Fluxos Alternativos - Se as alterações não puderem ser salvas, o sistema exib
 
 
 
+
+# Diagrama de Sequência
+[Diagrama de Sequencia.pdf](https://github.com/user-attachments/files/17950194/Diagrama.de.Sequencia.pdf)
+Esse diagrama é um diagrama de sequência, usado para representar o fluxo de interação entre diferentes atores e sistemas ao longo do tempo. Ele é muito comum em engenharia de software e projetos de sistemas. Vamos analisá-lo:
+
+Componentes do diagrama:
+Atores e sistemas (colunas):
+
+Cliente: O usuário que inicia o processo.
+Sistema: O sistema responsável por processar o pedido.
+Loja: Local onde a pizza será preparada.
+Cozinha: A área que efetivamente prepara a pizza.
+Entregador: Responsável por entregar o pedido ao cliente.
+Mensagens (setas):
+
+As setas representam as interações entre os elementos (atores ou sistemas) e são organizadas cronologicamente, de cima para baixo.
+Lifelines (linhas verticais):
+
+Representam a existência dos atores ou sistemas ao longo do processo.
+Explicação do fluxo:
+Início do pedido:
+
+O cliente inicia o pedido enviando uma solicitação ao Sistema.
+Identificar loja próxima:
+
+O sistema verifica qual loja está mais próxima e envia uma mensagem de identificação.
+A loja responde confirmando que foi identificada.
+Preparar pizza:
+
+O sistema solicita à loja que prepare a pizza, e a loja, por sua vez, repassa a tarefa à cozinha.
+A cozinha prepara a pizza e notifica a loja quando estiver pronta.
+Cálculo do tempo de entrega:
+
+O sistema calcula o tempo estimado de entrega com base na localização e status do pedido.
+Envio para entrega:
+
+A loja solicita ao entregador que faça a entrega da pizza ao cliente.
+Finalização do pedido:
+
+O sistema finaliza o pedido e encerra o processo.
+Finalidade do diagrama:
+Ele ajuda a:
+
+Compreender o fluxo de comunicação entre os elementos.
+Visualizar a sequência lógica das interações.
+Identificar possíveis falhas ou gargalos no processo.
+
+
+
+
+
+
+# Diagrama de Classes
+[Blank diagram (2).pdf](https://github.com/user-attachments/files/17950209/Blank.diagram.2.pdf)
+
+Elementos do diagrama:
+Classes (retângulos com três divisões):
+
+Cada classe é representada por um retângulo dividido em três partes:
+O nome da classe (ex.: GerenciarConfigurações).
+Atributos (não mostrados aqui, mas estariam abaixo do nome da classe).
+Métodos ou operações (ex.: +verificarEstoque(), +atualizarConfiguracoes()).
+As classes principais no diagrama são:
+
+Administrador: Classe associada a ações administrativas do sistema.
+GerenciarConfigurações: Responsável por ações como verificarEstoque() e atualizarConfiguracoes().
+Sistema: Classe central que gerencia pedidos e funcionalidades gerais.
+GerenciarPedidos: Inclui métodos como verificarEstoque() e prepararPedido().
+Cliente: Representa o usuário do sistema.
+FazerPedido: Oferece funcionalidades relacionadas ao fluxo do pedido, como localizarLoja(), exibirMenu(), etc.
+Relações entre as classes:
+
+Associações:
+Setas como "uses" ou "includes" indicam que uma classe depende ou colabora com outra.
+Exemplo: A classe Administrador usa a classe GerenciarConfigurações.
+Dependência ("includes"):
+A classe GerenciarPedidos inclui funcionalidades da classe FazerPedido.
+Direcionalidade:
+As setas mostram o fluxo de dependência entre as classes.
+Métodos:
+
+Listados após o símbolo + (indica que são públicos). Cada método representa uma ação ou operação oferecida pela classe.
+Explicação do fluxo:
+O Administrador usa a classe GerenciarConfigurações para tarefas administrativas, como verificar estoque e atualizar configurações.
+O Sistema inclui a classe GerenciarPedidos, que organiza o preparo e o fluxo de pedidos.
+O Cliente interage com o Sistema para realizar um pedido, utilizando a classe FazerPedido, que engloba operações como localizar loja, exibir menu e rastrear pedido.
+Finalidade do diagrama:
+Modelar a estrutura do sistema de forma orientada a objetos.
+Definir as responsabilidades de cada classe e como elas se relacionam.
+Servir como base para a implementação de código em linguagens orientadas a objetos, como Java, C#, etc.
+
+# Diagrama de Estados
+![Diagrama de estados](https://github.com/user-attachments/assets/99040c2c-fac7-4e53-8933-64dfbd3deb32)
+
+Este diagrama de estados descreve o ciclo de vida de um pedido em um sistema, detalhando os estados e as transições entre eles. Abaixo, uma análise do processo representado:
+
+Componentes do Diagrama
+Estado Inicial e Final:
+
+Estado Inicial: Representado pelo círculo preto no topo do diagrama. Marca o início do ciclo de vida do pedido.
+Estado Final: Representado pelo círculo preto com borda dupla no final, indicando o término do processo.
+Estados:
+
+Início: Estado inicial do pedido.
+RecebendoPedido: O sistema está processando o pedido inicial do cliente.
+IdentificandoLoja: Determina qual loja será responsável pelo pedido.
+PreparandoPedido: Momento em que a loja está produzindo o pedido (por exemplo, preparando uma pizza).
+CalculandoEntrega: Estado em que o sistema calcula o tempo estimado para a entrega.
+EnviandoEntrega: O pedido foi preparado e está sendo enviado para o cliente.
+Finalizado: O pedido foi concluído e o ciclo está completo.
+Transições:
+
+As transições entre os estados são acionadas por eventos ou condições específicas, indicados pelos textos ao lado das setas:
+"Pedido iniciado" → Transição do estado Início para RecebendoPedido.
+"Pedido recebido" → Transição de RecebendoPedido para IdentificandoLoja.
+"Loja identificada" → Transição de IdentificandoLoja para PreparandoPedido.
+"Pizza preparada" → Transição de PreparandoPedido para CalculandoEntrega.
+"Tempo de entrega calculado" → Transição de CalculandoEntrega para EnviandoEntrega.
+"Pedido enviado para entrega" → Transição de EnviandoEntrega para Finalizado.
+Fluxo Representado
+O cliente inicia o processo, ativando o estado Início.
+O pedido é recebido pelo sistema (RecebendoPedido).
+O sistema identifica a loja mais próxima ou adequada para preparar o pedido (IdentificandoLoja).
+A loja prepara o pedido (PreparandoPedido).
+Após o preparo, o sistema calcula o tempo de entrega (CalculandoEntrega).
+O pedido é enviado para entrega ao cliente (EnviandoEntrega).
+O ciclo termina com o pedido finalizado (Finalizado).
+Aplicações e Importância
+Documentação: Este diagrama ajuda na documentação dos processos de negócio ou sistema.
+Modelagem de Sistemas: É usado para planejar e compreender o comportamento do sistema em diferentes estados.
+Melhoria de Processos: Ajuda a identificar gargalos ou pontos de melhoria no fluxo.
+# Diagrama de Implantação
+[Blank diagram (1) (1).pdf](https://github.com/user-attachments/files/17950249/Blank.diagram.1.1.pdf)
+
+O diagrama apresentado é um diagrama de implementação, usado para ilustrar a arquitetura física de um sistema, mostrando como seus componentes de software e hardware estão conectados e interagem. Vamos analisá-lo em detalhes:
+
+Estrutura do Diagrama
+Elementos principais:
+Cliente:
+Representado pelo componente "Aplicativo Cliente". Este é o software que o usuário utiliza para acessar o sistema, provavelmente por meio de uma interface web ou aplicação específica.
+Internet:
+Indica que a comunicação entre o cliente e o sistema ocorre via conexão HTTP/HTTPS, sugerindo um sistema baseado na web.
+Servidor Web:
+Representa a camada responsável por processar as solicitações do cliente. É onde os serviços principais são executados, incluindo lógica de negócios.
+Servidor de Banco de Dados:
+Representado pelo "Banco de Dados", que armazena informações persistentes, como dados de clientes, pedidos ou configurações.
+Serviço Web:
+Inclui componentes como o "Frontend Web" e a "API REST", indicando que o sistema pode expor APIs para comunicação com outros serviços ou aplicações externas.
+Relações e Conexões
+Fluxo Cliente → Internet → Servidor Web:
+
+O cliente se conecta ao servidor web através de protocolos HTTP/HTTPS, o que é típico em arquiteturas baseadas em REST ou aplicações web.
+Servidor Web → Banco de Dados:
+
+O servidor web se comunica com o banco de dados para consultas e atualizações. Essa conexão é essencial para persistir e recuperar dados necessários para a aplicação.
+Serviço Web:
+
+É indicado que o servidor web contém uma interface frontend e uma API REST. Essa arquitetura permite:
+O acesso direto via navegador (frontend).
+Integrações com outros sistemas ou serviços por meio da API REST.
+Possíveis Interpretações
+Este diagrama provavelmente descreve um sistema baseado na arquitetura cliente-servidor com foco em:
+Conexões seguras (uso de HTTPS).
+Separaçãode responsabilidades:
+Cliente para interface de usuário.
+Servidor web para lógica de negócios.
+Banco de dados para persistência de dados.
+Expansibilidade: A inclusão de uma API REST sugere que o sistema pode ser integrado a outras aplicações ou microserviços.
+Benefícios do Diagrama
+Clareza: Apresenta as camadas principais de interação entre cliente, servidor e banco de dados.
+Escalabilidade: A presença de componentes como a API REST e o frontend indica que o sistema pode ser adaptado para diferentes plataformas ou dispositivos.
+Segurança: A menção explícita de HTTPS sugere uma preocupação com a segurança das comunicações.
+
+
+
+
 # Referências
 
       Pressman, R. S., & Maxim, B. R. (2021). Engenharia de software (9th ed.). 
