@@ -48,4 +48,33 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 
 # Releases
 
-Deverá ser publicado um release ao término de cada entrega do projeto.
+Release: Novos Diagramas Adicionados ao Sistema
+
+Prezados Usuários,
+
+Estamos felizes em anunciar a adição de novos diagramas ao nosso sistema de documentação e processos! Esses diagramas foram criados para melhorar a visualização e o entendimento dos fluxos operacionais e do comportamento do sistema.
+
+Novidades incluídas:
+Diagrama de Sequência
+
+Representa a interação entre diferentes atores e componentes do sistema durante o ciclo de vida de um pedido.
+Detalha como o cliente, o sistema, a loja, a cozinha e o entregador se comunicam para processar e entregar um pedido.
+Diagrama de Classes
+
+Mapeia os principais objetos envolvidos no sistema, como Administrador, Cliente e Sistema, destacando suas relações e métodos.
+Ajuda a entender a estrutura lógica do sistema e os métodos associados a cada classe.
+Diagrama de Implementação
+
+Demonstra como os componentes físicos e lógicos do sistema se conectam, desde o cliente até o servidor de banco de dados.
+Fornece uma visão clara da infraestrutura necessária para o funcionamento da aplicação.
+Diagrama de Estados
+
+Ilustra o ciclo de vida de um pedido, desde o início até a finalização.
+Auxilia no entendimento de cada etapa e transição do processo de pedidos.
+Objetivo:
+Com essas adições, queremos proporcionar uma melhor compreensão do funcionamento do sistema, tanto para desenvolvedores quanto para usuários e administradores. Esses diagramas servem como ferramentas indispensáveis para análise, manutenção e evolução da plataforma.
+
+Agradecemos por fazerem parte da nossa jornada de melhorias contínuas! Caso tenham dúvidas ou sugestões, não hesitem em entrar em contato com nossa equipe.
+
+Atenciosamente,
+Equipe de Desenvolvimento
