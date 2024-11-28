@@ -460,7 +460,8 @@ Fluxos Alternativos - Se as alterações não puderem ser salvas, o sistema exib
 
 
 # Diagrama de Sequência
-[Diagrama de Sequencia.pdf](https://github.com/user-attachments/files/17950194/Diagrama.de.Sequencia.pdf)
+![Diagrama de Sequencia-1](https://github.com/user-attachments/assets/68ffdade-9171-4b8d-9cdf-e7ec97146833)
+
 Esse diagrama é um diagrama de sequência, usado para representar o fluxo de interação entre diferentes atores e sistemas ao longo do tempo. Ele é muito comum em engenharia de software e projetos de sistemas. Vamos analisá-lo:
 
 Componentes do diagrama:
@@ -511,7 +512,7 @@ Identificar possíveis falhas ou gargalos no processo.
 
 
 # Diagrama de Classes
-[Blank diagram (2).pdf](https://github.com/user-attachments/files/17950209/Blank.diagram.2.pdf)
+![Blank diagram (2)-1](https://github.com/user-attachments/assets/23a2adfa-aee4-4317-addf-f0ff915c8ff9)
 
 Elementos do diagrama:
 Classes (retângulos com três divisões):
@@ -590,7 +591,8 @@ Documentação: Este diagrama ajuda na documentação dos processos de negócio 
 Modelagem de Sistemas: É usado para planejar e compreender o comportamento do sistema em diferentes estados.
 Melhoria de Processos: Ajuda a identificar gargalos ou pontos de melhoria no fluxo.
 # Diagrama de Implantação
-[Blank diagram (1) (1).pdf](https://github.com/user-attachments/files/17950249/Blank.diagram.1.1.pdf)
+![Blank diagram (1) (1)-1](https://github.com/user-attachments/assets/f3e5851c-b0d1-4b3b-b797-01bfef9875cf)
+
 
 O diagrama apresentado é um diagrama de implementação, usado para ilustrar a arquitetura física de um sistema, mostrando como seus componentes de software e hardware estão conectados e interagem. Vamos analisá-lo em detalhes:
 
